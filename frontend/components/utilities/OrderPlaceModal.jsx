@@ -28,6 +28,7 @@ function OrderPlaceModal({ bookingModal, setBookingModal }) {
 
   // handle date change on date picker
   const handleDateChange = (dates) => {
+    console.log({dates})
     const formattedDates = dates.map((date) => dayjs(date).format('YYYY-MM-DD'));
     setSelectedDates(formattedDates);
   };
